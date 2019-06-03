@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Us</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- Latest compiled and minified CSS -->
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+     body{
+       background-color: black;
+     }
+
+     .jumbotron{
+        background-color: grey;
+        color:black;
+      }
+
+      footer{
+        text-align: center;
+        color: white;
+        font-style: italic;
+      }
+   </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="http://localhost:3000/">HOME<span class="sr-only">(current)</span></a></li>
+                <li><a href="posts">NEW POST</a></li>
+                <li><a href="archive">ARCHIVE</a></li>
+                <li class="active"><a href="contact">CONTACT</a></li>
+                <li><a href="signUp">SUBSCRIBE</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+      
+      <div class="jumbotron">
+        <center>
+          <h3>Welcome to <%= title %></h3>  
+        </center>
+      </div>
+
+     <form>
+        <div class="form-group" width="100%">
+         <label for="exampleInputName1">Name</label>
+         <input type="email" class="form-control" id="exampleInputName1" aria-describedby="emailHelp" placeholder="Enter full name">
+         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+
+        <div class="form-grou p">
+         <label for="exampleInputEmail1">Email</label>
+         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+        </div>
+
+        <div class="form-group">
+         <label for="exampleInputMessage1">Message Box:</label>
+         <textarea class="form-control" name="exampleInputMessage1" id="exampleInputEmail1" cols="30" rows="10" placeholder="Any suggestions/comments"></textarea>
+        </div>
+
+        <div class="form-check">
+         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+         <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+     </form>
+    </div>
+
+    
+    <footer>
+      Designed: ODee Kula
+    </footer>
+    
+  </body>
+</html>

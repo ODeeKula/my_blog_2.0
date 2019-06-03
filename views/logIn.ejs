@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <!-- cdn for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!-- linking css stylesheet -->
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script> 
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script> 
+    <!-- link for google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Knewave" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Knewave|Muli" rel="stylesheet">
+    <!-- summernote -->
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.css" rel="stylesheet">
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.9/summernote.js"></script>
+    <style>
+       body{
+           background-color: black;
+        }
+
+        .jumbotron{
+            color: black;
+            background-color: grey;
+        }
+
+        h2{
+            color: white;
+        }
+
+        .btn btn-primary btn-block{
+            colr: white;
+        }
+    </style>
+</head>
+
+<nav class="navbar navbar-inverse">
+    <div class="container">
+        <ul class="nav navbar-nav">
+            <li><a href="http://localhost:3000/">HOME<span class="sr-only">(current)</span></a></li>
+            <li><a href="posts">NEW POST</a></li>
+            <li><a href="archive">ARCHIVE</a></li>
+            <li><a href="contact">CONTACT</a></li>
+        </ul>
+    </div>
+</nav>
+
+<body>
+    <div class="container">
+        <div class="jumbotron">
+            <center>
+              <h3>Welcome to <%= title %></h3>  
+            </center>
+          </div>
+       <h2 class="text-center">Login</h2>
+       <div class="container">
+       <div class="login-dark">
+           <form method="post">
+               <h2 class="sr-only">Login</h2>
+               <div class="illustration">
+                   <i class="icon ion-ios-locked-outline"></i>
+               </div>
+               <div class="form-group">
+                   <input class="form-control" type="email" name="email" placeholder="Email">
+               </div>
+               <div class="form-group">
+                <input class="form-control" type="password" name="password" placeholder="Password">
+               </div>
+               <div class="form-group">
+                   <button type="submit" class="btn btn-primary btn-block" > <a href="http://localhost:3000/">Login</a></button>
+               </div>
+               <a class="forgot" href="">Forgot your email or password?</a>
+           </form>
+       </div>
+    </div>
+</div>
+
+    <footer>
+        Designed: ODee Kula
+    </footer>
+</body>
+
+</html>
